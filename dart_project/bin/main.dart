@@ -34,13 +34,19 @@ import 'dart:io';
 //   print(address.length);
 // }
 
+// void main() {
+//   int num1 = -4;
+//   if (num1 < 0) {
+//     print('negative number');
+//   } else if (num1 == 0) {
+//     print('zero');
+//   } else {
+//     print('positive number');
+//   }
+// }
+
 void main() {
-  int num1 = -4;
-  if (num1 < 0) {
-    print('negative number');
-  } else if (num1 == 0) {
-    print('zero');
-  } else {
-    print('positive number');
+  for (var i = 0; i < 11; i++) {
+    print(i);
   }
 }
