@@ -13,4 +13,4 @@ void main() {
   print('Total is : $sum');
 }
 
-void main() {}
+// void main() {}
