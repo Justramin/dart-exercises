@@ -45,8 +45,19 @@ import 'dart:io';
 //   }
 // }
 
+// void main() {
+//   for (var i = 0; i < 11; i++) {
+//     print(i);
+//   }
+// }
+
 void main() {
-  for (var i = 0; i < 11; i++) {
-    print(i);
+  var array = [25, 'hai', 20.5];
+  print(array);
+  List<int> numberList = [12, 13, 14, 5];
+  print(numberList);
+  print(numberList.length);
+  if (numberList.contains(13)) {
+    print('inclede that number');
   }
 }
