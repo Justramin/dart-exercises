@@ -51,25 +51,34 @@ import 'dart:io';
 //   }
 // }
 
+// void main() {
+//   var array = [25, 'hai', 20.5, 12, 34, 56, 78];
+//   print(array);
+//   List<int> numberList = [12, 13, 14, 5];
+//   print(numberList);
+//   print(numberList.length);
+//   if (numberList.contains(13)) {
+//     print('inclede that number');
+//   }
+//   array.add(10);
+//   print(array);
+//   array.remove('hai');
+//   print(array);
+//   array.removeAt(1);
+//   print(array);
+//   array.removeLast();
+//   print(array);
+//   array.removeRange(0, 2);
+//   print(array);
+//   array.removeWhere((a) => a == 56);
+//   print(array);
+// }
+
 void main() {
-  var array = [25, 'hai', 20.5, 12, 34, 56, 78];
-  print(array);
-  List<int> numberList = [12, 13, 14, 5];
-  print(numberList);
-  print(numberList.length);
-  if (numberList.contains(13)) {
-    print('inclede that number');
-  }
-  array.add(10);
-  print(array);
-  array.remove('hai');
-  print(array);
-  array.removeAt(1);
-  print(array);
-  array.removeLast();
-  print(array);
-  array.removeRange(0, 2);
-  print(array);
-  array.removeWhere((a) => a == 56);
-  print(array);
+  var array1 = [25, 38, 20, 12, 34, 56, 78];
+  print(array1);
+  var array2 = [76, 57, 98, 54, 32, 64, 92];
+  array1.addAll(array2);
+  print(array1);
+  print(array1.join('  *  '));
 }
