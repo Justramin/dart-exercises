@@ -74,11 +74,33 @@ import 'dart:io';
 //   print(array);
 // }
 
+// void main() {
+//   var array1 = [25, 38, 20, 12, 34, 56, 78];
+//   print(array1);
+//   var array2 = [76, 57, 98, 54, 32, 64, 92];
+//   array1.addAll(array2);
+//   print(array1);
+//   print(array1.join('  *  '));
+// }
+
 void main() {
-  var array1 = [25, 38, 20, 12, 34, 56, 78];
-  print(array1);
-  var array2 = [76, 57, 98, 54, 32, 64, 92];
-  array1.addAll(array2);
-  print(array1);
-  print(array1.join('  *  '));
+  List<List<int>> array = [
+    [25, 38, 34],
+    [20, 12, 34],
+    [56, 78, 37],
+  ];
+  print(array);
+  print(array[0][1]); //38
+
+  List<int> number1 = [1, 23, 4, 56, 8, 6, 8, 5, 4, 3, 3, 3, 5, 5, 57];
+  print(number1);
+  Set<int> number2 = {1, 23, 4, 56, 8, 6, 8, 5, 4, 3, 3, 3, 5, 5, 57};
+  print(number2);
+
+  Map<String, String> maps = {"name": "justin", "age": "26"};
+  print(maps["name"]);
+  print(maps["age"]);
+
+  var mapss = {"name": "justin", "age": 26};
+  print(mapss["age"]);
 }
