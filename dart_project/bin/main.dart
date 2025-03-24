@@ -83,24 +83,62 @@ import 'dart:io';
 //   print(array1.join('  *  '));
 // }
 
+// void main() {
+//   List<List<int>> array = [
+//     [25, 38, 34],
+//     [20, 12, 34],
+//     [56, 78, 37],
+//   ];
+//   print(array);
+//   print(array[0][1]); //38
+
+//   List<int> number1 = [1, 23, 4, 56, 8, 6, 8, 5, 4, 3, 3, 3, 5, 5, 57];
+//   print(number1);
+//   Set<int> number2 = {1, 23, 4, 56, 8, 6, 8, 5, 4, 3, 3, 3, 5, 5, 57};
+//   print(number2);
+
+//   Map<String, String> maps = {"name": "justin", "age": "26"};
+//   print(maps["name"]);
+//   print(maps["age"]);
+
+//   var mapss = {"name": "justin", "age": 26};
+//   print(mapss["age"]);
+// }
+
 void main() {
-  List<List<int>> array = [
-    [25, 38, 34],
-    [20, 12, 34],
-    [56, 78, 37],
-  ];
-  print(array);
-  print(array[0][1]); //38
+  sum();
 
-  List<int> number1 = [1, 23, 4, 56, 8, 6, 8, 5, 4, 3, 3, 3, 5, 5, 57];
-  print(number1);
-  Set<int> number2 = {1, 23, 4, 56, 8, 6, 8, 5, 4, 3, 3, 3, 5, 5, 57};
-  print(number2);
+  sumParams(3, 6);
 
-  Map<String, String> maps = {"name": "justin", "age": "26"};
-  print(maps["name"]);
-  print(maps["age"]);
+  var sum1 = sumReturn(5, 5);
+  print(sum1);
 
-  var mapss = {"name": "justin", "age": 26};
-  print(mapss["age"]);
+  sumReq(firstNumber: 100, secondNumber: 200);
+  sumFunction(10, 30, sumParams);
+
+  sumFuture(12, 34);
+}
+
+void sum() {
+  print(2 + 3);
+}
+
+void sumParams(int a, int b) {
+  print('${a + b}');
+}
+
+int sumReturn(int a, int b) {
+  return a + b;
+}
+
+void sumReq({required int firstNumber, required int secondNumber}) {
+  print(firstNumber + secondNumber);
+}
+
+void sumFunction(int a, int b, void Function(int, int) customSum) {
+  customSum(a, b);
+}
+
+Future<void> sumFuture(int a, int b) async {
+  print('sum future is ${a + b}');
 }
