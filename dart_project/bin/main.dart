@@ -117,6 +117,8 @@ void main() {
   sumFunction(10, 30, sumParams);
 
   sumFuture(12, 34);
+
+  print('ettevum lastil ulla print line');
 }
 
 void sum() {
@@ -140,5 +142,6 @@ void sumFunction(int a, int b, void Function(int, int) customSum) {
 }
 
 Future<void> sumFuture(int a, int b) async {
+  await Future.delayed(Duration(seconds: 3));
   print('sum future is ${a + b}');
 }
