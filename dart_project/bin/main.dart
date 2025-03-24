@@ -162,19 +162,31 @@ import 'dart:io';
 //   print('In just sum');
 // }
 
-Future<void> main() async {
-  await sum();
-  await sumFuture(33, 44);
-  print('Lasset ulla print');
-}
+// Future<void> main() async {
+//   await sum();
+//   await sumFuture(33, 44);
+//   print('Lasset ulla print');
+// }
 
-Future<int> sumFuture(int a, int b) async {
-  await Future.delayed(Duration(seconds: 3));
-  print('In sum future is ${a + b}');
-  return a + b;
-}
+// Future<int> sumFuture(int a, int b) async {
+//   await Future.delayed(Duration(seconds: 3));
+//   print('In sum future is ${a + b}');
+//   return a + b;
+// }
 
-Future<void> sum() async {
-  await sumFuture(33, 44);
-  print('In just sum');
+// Future<void> sum() async {
+//   await sumFuture(33, 44);
+//   print('In just sum');
+// }
+void main() {
+  final String name;
+  name = 'Justin';
+  print(name);
+
+  final List<int> numberList;
+  numberList = [23, 45, 21];
+  print(numberList);
+  numberList.add(34);
+  numberList.add(100);
+  print(numberList);
 }
