@@ -189,4 +189,12 @@ void main() {
   numberList.add(34);
   numberList.add(100);
   print(numberList);
+
+  const String place = 'Kannur';
+  print(place);
+  const List<int> numberlists = [1, 2, 3, 4, 5, 6, 7];
+  print(numberlists);
+  // numberlists.add(8); // wrong lines remove this
+  // numberlists.add(9); // wrong lines remove this
+  // print(numberlists); // wrong lines remove this
 }
