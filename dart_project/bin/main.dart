@@ -105,43 +105,59 @@ import 'dart:io';
 //   print(mapss["age"]);
 // }
 
+// void main() {
+//   sum();
+
+//   sumParams(3, 6);
+
+//   var sum1 = sumReturn(5, 5);
+//   print(sum1);
+
+//   sumReq(firstNumber: 100, secondNumber: 200);
+//   sumFunction(10, 30, sumParams);
+
+//   sumFuture(12, 34);
+
+//   print('ettevum lastil ulla print line');
+// }
+
+// void sum() {
+//   print(2 + 3);
+// }
+
+// void sumParams(int a, int b) {
+//   print('${a + b}');
+// }
+
+// int sumReturn(int a, int b) {
+//   return a + b;
+// }
+
+// void sumReq({required int firstNumber, required int secondNumber}) {
+//   print(firstNumber + secondNumber);
+// }
+
+// void sumFunction(int a, int b, void Function(int, int) customSum) {
+//   customSum(a, b);
+// }
+
+// Future<void> sumFuture(int a, int b) async {
+//   await Future.delayed(Duration(seconds: 3));
+//   print('sum future is ${a + b}');
+// }
+
 void main() {
   sum();
-
-  sumParams(3, 6);
-
-  var sum1 = sumReturn(5, 5);
-  print(sum1);
-
-  sumReq(firstNumber: 100, secondNumber: 200);
-  sumFunction(10, 30, sumParams);
-
-  sumFuture(12, 34);
-
-  print('ettevum lastil ulla print line');
+  print('Lasset ulla print');
 }
 
-void sum() {
-  print(2 + 3);
-}
-
-void sumParams(int a, int b) {
-  print('${a + b}');
-}
-
-int sumReturn(int a, int b) {
+Future<int> sumFuture(int a, int b) async {
+  await Future.delayed(Duration(seconds: 3));
+  print('In sum future is ${a + b}');
   return a + b;
 }
 
-void sumReq({required int firstNumber, required int secondNumber}) {
-  print(firstNumber + secondNumber);
-}
-
-void sumFunction(int a, int b, void Function(int, int) customSum) {
-  customSum(a, b);
-}
-
-Future<void> sumFuture(int a, int b) async {
-  await Future.delayed(Duration(seconds: 3));
-  print('sum future is ${a + b}');
+Future<void> sum() async {
+  sumFuture(33, 44);
+  print('In just sum');
 }
