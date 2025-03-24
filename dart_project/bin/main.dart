@@ -158,6 +158,6 @@ Future<int> sumFuture(int a, int b) async {
 }
 
 Future<void> sum() async {
-  sumFuture(33, 44);
+  await sumFuture(33, 44);
   print('In just sum');
 }
