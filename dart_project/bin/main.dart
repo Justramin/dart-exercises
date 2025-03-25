@@ -243,3 +243,18 @@ import 'dart:io';
 //   human.sayHello();
 //   human.sayName();
 // }
+abstract class Animal {
+  void sayHello();
+}
+
+class Human extends Animal {
+  @override
+  void sayHello() {
+    print('Human extend  animal and overrided parent class');
+  }
+}
+
+void main() {
+  final human = Human();
+  human.sayHello();
+}
