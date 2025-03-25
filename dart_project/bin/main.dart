@@ -220,3 +220,26 @@ import 'dart:io';
 //   print(person.name);
 //   person.sayHai();
 // }
+
+// class Animal {
+//   void sayHello() {
+//     print('Animal Say Hellow');
+//   }
+// }
+
+// class Human extends Animal {
+//   void sayName() {
+//     print('Humn say Name');
+//     // super.sayHello();   // parent classilulla function call cheyyunathu.
+//   }
+
+//   // void sayHello() {    // function over
+//   //   print('Say Hellow Human');
+//   // }
+// }
+
+// void main() {
+//   final human = Human();
+//   human.sayHello();
+//   human.sayName();
+// }
