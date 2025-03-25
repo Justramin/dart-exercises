@@ -260,18 +260,38 @@ import 'dart:io';
 //   human.sayHello();
 // }
 
-mixin Animal1 {
-  int age = 26;
-  void sayHellow() {
-    print('Mixin Animal1 Say Hellow.');
-  }
-}
+// mixin Animal1 {
+//   int age = 26;
+//   void sayHellow() {
+//     print('Mixin Animal1 Say Hellow.');
+//   }
+// }
 
-mixin Animal2 {
-  int age = 28;
-  void sayHellow() {
-    print('Mixin Animal2 Say Hellow.....');
-  }
-}
+// mixin Animal2 {
+//   int age = 28;
+//   void sayHellow() {
+//     print('Mixin Animal2 Say Hellow.....');
+//   }
+// }
 
-class Humans with Animal1, Animal2 {}
+// class Humans with Animal1, Animal2 {}
+
+// class InvalidPhoneNumberException implements Exception {}
+
+// bool? validatePhoneNumber(String phone) {
+//   if (phone.length == 10) {
+//     return true;
+//   } else {
+//     throw InvalidPhoneNumberException();
+//   }
+// }
+
+// void main() {
+//   try {
+//     final phoneValid = validatePhoneNumber('12345');
+//   } on InvalidPhoneNumberException catch (_) {
+//     print('Invalid Phone Number');
+//   } catch (e) {
+//     print(e);
+//   }
+// }
