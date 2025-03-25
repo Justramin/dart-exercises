@@ -178,23 +178,45 @@ import 'dart:io';
 //   await sumFuture(33, 44);
 //   print('In just sum');
 // }
-void main() {
-  final String name;
-  name = 'Justin';
-  print(name);
+// void main() {
+//   final String name;
+//   name = 'Justin';
+//   print(name);
 
-  final List<int> numberList;
-  numberList = [23, 45, 21];
-  print(numberList);
-  numberList.add(34);
-  numberList.add(100);
-  print(numberList);
+//   final List<int> numberList;
+//   numberList = [23, 45, 21];
+//   print(numberList);
+//   numberList.add(34);
+//   numberList.add(100);
+//   print(numberList);
 
-  const String place = 'Kannur';
-  print(place);
-  const List<int> numberlists = [1, 2, 3, 4, 5, 6, 7];
-  print(numberlists);
-  // numberlists.add(8); // wrong lines remove this
-  // numberlists.add(9); // wrong lines remove this
-  // print(numberlists); // wrong lines remove this
-}
+//   const String place = 'Kannur';
+//   print(place);
+//   const List<int> numberlists = [1, 2, 3, 4, 5, 6, 7];
+//   print(numberlists);
+//   // numberlists.add(8); // wrong lines remove this
+//   // numberlists.add(9); // wrong lines remove this
+//   // print(numberlists); // wrong lines remove this
+// }
+
+// class Person {
+//   final String name;
+//   final int age;
+
+//   // Person(String name, int age) {   // not working after use final
+//   //   this.name = name;
+//   //   this.age = age;
+//   // }
+//   Person(this.name, this.age);
+
+//   void sayHai() {
+//     print('Say Hai...');
+//   }
+// }
+
+// void main() {
+//   final person = Person('justin ram', 26);
+//   // person.name = 'justin';
+//   print(person.name);
+//   person.sayHai();
+// }
