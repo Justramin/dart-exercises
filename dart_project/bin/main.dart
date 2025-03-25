@@ -243,18 +243,35 @@ import 'dart:io';
 //   human.sayHello();
 //   human.sayName();
 // }
-abstract class Animal {
-  void sayHello();
-}
 
-class Human extends Animal {
-  @override
-  void sayHello() {
-    print('Human extend  animal and overrided parent class');
+// abstract class Animal {
+//   void sayHello();
+// }
+
+// class Human extends Animal {
+//   @override
+//   void sayHello() {
+//     print('Human extend  animal and overrided parent class');
+//   }
+// }
+
+// void main() {
+//   final human = Human();
+//   human.sayHello();
+// }
+
+mixin Animal1 {
+  int age = 26;
+  void sayHellow() {
+    print('Mixin Animal1 Say Hellow.');
   }
 }
 
-void main() {
-  final human = Human();
-  human.sayHello();
+mixin Animal2 {
+  int age = 28;
+  void sayHellow() {
+    print('Mixin Animal2 Say Hellow.....');
+  }
 }
+
+class Humans with Animal1, Animal2 {}
